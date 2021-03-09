@@ -1,0 +1,197 @@
+*{
+    font-family: 'Spartan', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100%;
+    background: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 15rem 30rem;
+    background-size: contain;    
+}
+
+/*MOBILE*/
+
+.top-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left-content{
+    color: hsl(300, 43%, 22%);
+    padding: 4rem 4rem 1rem 4rem;
+}
+
+.left-content h1{
+    text-align: center;
+}
+
+.left-content p{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.right-content{
+   /*sem uso*/
+}
+
+.right-content p{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: hsl(300, 43%, 22%);
+    margin-top: 0.7rem;
+}
+
+
+.right-content-square{
+    background: hsl(300, 24%, 96%);
+    background-image: url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg);
+    /*posicionamento de cada uma das estelas*/
+    background-position: 30% 10%, 40% 10%, 50% 10%, 60% 10%, 70% 10%;
+    background-repeat: no-repeat;
+    padding: 1.5rem 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+.middle-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.middle-content-square{
+    background-color: hsl(300, 43%, 22%);
+    margin: 1rem;
+    padding: 2rem;
+    border-radius: 10px;
+    /*clear: both;*/
+    position: relative;
+}
+
+.avatar{
+    /*float: left;*/
+    width: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    /*padding: 1rem;
+    margin-bottom: 5rem;*/
+}
+
+.middle-content-title{
+    color: white;
+    font-size: 1rem;
+    margin-left: 5rem;
+}
+
+.middle-content-subtitle{
+    color: hsl(333, 80%, 67%);
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+
+.middle-content-text{
+    color: white;
+    margin-left: 5rem;
+}
+
+
+/*DESKTOP*/
+
+@media (min-width: 64rem){
+    body{ /*concertar*/
+        width: 100%;
+        background: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 0 0, 70rem 40rem;
+        background-size: contain;    
+    }
+
+    .top-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left-content{
+        padding: 0rem 7rem 1rem 0rem;
+    }
+
+
+    .left-content h1{
+        text-align: left;
+        max-width: 300px;
+    }
+    
+    .left-content p{
+        margin-top: 1rem;
+        text-align: left;
+        max-width: 500px;
+    }
+
+    .right-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin-top: 5.5rem;
+    }
+
+    .right-content-square{
+        width: 120%;
+        background: hsl(300, 24%, 96%);
+        background-image: url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg), url(./images/icon-star.svg);
+        /*posicionamento de cada uma das estelas*/
+        background-position: 10% 55%, 18% 55%, 26% 55%, 34% 55%, 42% 55%;
+        background-repeat: no-repeat;
+    }
+
+    .right-content p{
+        text-align: right;
+    }
+
+     .right-content-square:nth-child(2){
+        padding: 1.5rem 2rem;
+        margin-left: 4rem;
+        border-radius: 10px;
+    }
+
+    .right-content-square:nth-child(3){
+        padding: 1.5rem 2rem;
+        margin-left: 8rem;
+        border-radius: 10px;
+    }
+
+    .middle-content{
+        flex-direction: row;
+        
+    }
+
+    .middle-content-square{
+        background-color: hsl(300, 43%, 22%);
+        margin: 1rem;
+        padding: 3rem;
+        width: 450px;
+    }
+
+    .middle-content-square:nth-child(2){
+        margin-top: 4rem;
+    }
+
+    .middle-content-square:nth-child(3){
+        margin-top: 8rem;
+    }
+
+
+}
+
