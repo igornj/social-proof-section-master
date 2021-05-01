@@ -1,5 +1,5 @@
 # social-proof-section-master
-Challenge from:  https://devchallenge.com.br/challenges
+Challenge from:  https://www.frontendmentor.io/challenges
 
 VERCEL PREVIEW: https://social-proof-section-master-dnjixlzks-igornj.vercel.app
 
